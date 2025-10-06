@@ -1,5 +1,7 @@
 package org.example
 
+import JuegoCartas
+
 abstract class JuegoMesa(
     val titulo: String,
     val autor: String,
@@ -18,7 +20,9 @@ abstract class JuegoMesa(
     }
 
     companion object {
-        lateinit var coleccion: JuegoMesa;
+        private val coleccion = ArrayList<JuegoMesa>()
+        val juego: List<JuegoMesa> = coleccion
+
     }
 
 }
