@@ -1,16 +1,24 @@
-package org.example
+import org.example.JuegoColeccion
+import org.example.JuegoMesa
+import org.example.TipoJuego
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+fun main(){
+    val juco01 = JuegoColeccion<JuegoMesa>();
+    //juco01.busqueda("TEST");
+    val ju01 = JuegoTablero("Hola", "Autor", 2, 3, 90, TipoJuego.ESTRATEGIA, "Grande");
+    println(ju01);
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
+
+    //Inicio Programa
+    val menu = true;
+    while (menu){
+        println("1. Placeholder \n2. Placeholder \n3. Placeholder \n4. Salir del Programa \n")
+        val opcion = readln()
+        when (opcion) {
+            "1" -> println("Hola")
+            "2" -> {println("Listado"); JuegoMesa.coleccion}
+            "3" -> println("Grande")
+            "4" -> {println("Saliendo del programa..."); break}
+        }
     }
 }
