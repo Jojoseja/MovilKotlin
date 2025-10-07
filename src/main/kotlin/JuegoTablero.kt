@@ -9,7 +9,7 @@ class JuegoTablero(titulo: String, autor: String, minJug: Int, maxJug: Int, dura
     }
 
     override fun toString(): String {
-        return super.toString()+ "JuegoTablero(size='$size')"
+        return super.toString() + "JuegoTablero(size='$size')"
     }
 
 }

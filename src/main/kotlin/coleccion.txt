@@ -1,0 +1,4 @@
+cartas;Yo;Adios;2;5;90;FAMILIAR;90
+tablero;Hola;Autor;2;3;90;ESTRATEGIA;Grande
+cartas;Sota;Yo;2;8;15;FAMILIAR;40
+tablero;Busqueda en el Sotano;Carlos;2;10;FAMILIAR;Grande

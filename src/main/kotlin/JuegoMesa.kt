@@ -10,15 +10,11 @@ abstract class JuegoMesa(
 ) {
 
     open fun toArchivo(): String {
-        return this.titulo + ";;" + this.autor + ";;" + this.minJug + ";" + this.maxJug + ";" + this.duracion + ";" + this.tipoJuego + ";";
+        return this.titulo + ";;" + this.autor + ";;" + this.minJug + ";;" + this.maxJug + ";;" + this.duracion + ";;" + this.tipoJuego + ";;"
     }
 
     override fun toString(): String {
         return "JuegoMesa(titulo='$titulo', autor='$autor', minJug=$minJug, maxJug=$maxJug, duracion=$duracion, tipoJuego=$tipoJuego)"
-    }
-
-    companion object {
-        lateinit var coleccion: JuegoMesa;
     }
 
 }

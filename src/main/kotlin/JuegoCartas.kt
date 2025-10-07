@@ -5,11 +5,10 @@ class JuegoCartas(titulo: String, autor: String, minJug: Int, maxJug: Int, durac
     : JuegoMesa(titulo, autor, minJug, maxJug, duracion, tipoJuego) {
 
     override fun toArchivo(): String {
-        return super.toArchivo() + this.cartas;
+        return super.toArchivo() + this.cartas
     }
 
     override fun toString(): String {
         return super.toString()+ "JuegoCartas(cartas=$cartas)"
     }
-
 }
